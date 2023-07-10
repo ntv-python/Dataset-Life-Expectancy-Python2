@@ -2,7 +2,7 @@ dash==2.6.0
 dash_bootstrap_components
 dash_table
 pandas
-plotly.graph_objs
+plotly
 dcc
 html
 Input
