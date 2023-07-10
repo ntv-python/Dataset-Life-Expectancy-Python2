@@ -90,7 +90,7 @@ app.layout = dbc.Container(
                         ),
                         dbc.Card(
                             [
-                                dbc.CardHeader("Life expectancy", className="subtitle",
+                                dbc.CardHeader("Life expectancy ", className="subtitle",
                                                style={'color': 'black', 'text-align': 'center'}),  # Change the color to black and align center
                                 dbc.CardBody(
                                     [
@@ -246,7 +246,7 @@ def update_line_chart(selected_country):
 
     line_data = go.Scatter(
         x=country_data['Year'],
-        y=country_data['Life expectancy'],
+        y=country_data['Life expectancy '],
         mode='lines+markers',
         marker=dict(color='#331177', size=6),
         line=dict(width=2)
