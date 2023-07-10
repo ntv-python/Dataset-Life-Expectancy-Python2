@@ -10,7 +10,6 @@ import numpy as np
 
 
 
-
 my_data = pd.read_csv('Life Expectancy Data.csv') 
 
 
