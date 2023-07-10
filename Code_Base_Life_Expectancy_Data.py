@@ -3,10 +3,11 @@ import dash_bootstrap_components as dbc
 from dash import dash_table
 import pandas as pd
 import plotly.graph_objs as go
-from dash import dcc, html, Input, Output
+from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
-from dash_bootstrap_templates import load_figure_template
 import numpy as np
+import os
+
 
 
 
@@ -20,7 +21,7 @@ years = my_data['Year'].unique()
 
 custom_colors = ['#331177', '#F9C70C']  # Custom colors: Indigo and Amber
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MORPH])
-server = app.server
+
 
 # Data for Pie chart
 gdp_sum_by_status_year = my_data.groupby(['Year', 'Status'])['GDP'].sum().reset_index()
