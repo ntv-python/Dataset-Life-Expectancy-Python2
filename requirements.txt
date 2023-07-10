@@ -3,10 +3,6 @@ dash_bootstrap_components
 dash_table
 pandas
 plotly
-dcc
-html
-Input
-Output
 plotly.express
 numpy
 gunicorn
