@@ -3,11 +3,10 @@ import dash_bootstrap_components as dbc
 from dash import dash_table
 import pandas as pd
 import plotly.graph_objs as go
-from dash import Dash, dcc, html, Input, Output
+from dash import dcc, html, Input, Output
 import plotly.express as px
 from dash_bootstrap_templates import load_figure_template
 import numpy as np
-import os
 
 
 
