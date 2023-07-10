@@ -1,7 +1,12 @@
 dash
 dash_bootstrap_components
+dash_table
 pandas
 plotly.graph_objs
+dcc
+html
+Input
+Output
 plotly.express
 numpy
 gunicorn
