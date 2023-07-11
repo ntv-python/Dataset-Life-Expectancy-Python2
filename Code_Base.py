@@ -320,8 +320,8 @@ def update_histogram(std):
 def update_table(selected_year):
     if selected_year:
         filtered_data = my_data[my_data['Year'] == selected_year]
-        sorted_data = filtered_data.sort_values(by='bmi', ascending=True)
-        return sorted_data[['Country', 'bmi']].to_dict('records')
+        sorted_data = filtered_data.sort_values(by=' BMI ', ascending=True)
+        return sorted_data[['Country', ' BMI ']].to_dict('records')
     else:
         return []
 
