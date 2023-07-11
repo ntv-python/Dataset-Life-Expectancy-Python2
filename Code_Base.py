@@ -20,7 +20,7 @@ years = my_data['Year'].unique()
 
 custom_colors = ['#331177', '#F9C70C']  # Custom colors: Indigo and Amber
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MORPH])
-server = app.server
+
 
 # Data for Pie chart
 gdp_sum_by_status_year = my_data.groupby(['Year', 'Status'])['GDP'].sum().reset_index()
@@ -122,7 +122,7 @@ app.layout = dbc.Container(
                                     [
                                         dcc.Graph(
                                             id='histogram',
-                                            style={'height': '400px', 'width': '550px', 'font-family': 'Yeseva One',
+                                            style={'height': '400px', 'width': '450px', 'font-family': 'Yeseva One',
                                                    'color': 'black'}  # Change the color to black
                                         ),
                                         dcc.Slider(
@@ -155,7 +155,7 @@ app.layout = dbc.Container(
                                         ),
                                         dash_table.DataTable(
                                             id='data-table',
-                                            columns=[{'name': 'Country', 'id': 'Country'}, {'name': 'BMI', 'id': 'bmi'}],
+                                            columns=[{'name': 'Country', 'id': 'Country'}, {'name': ' BMI ', 'id': ' BMI '}],
                                             data=[],
                                             style_cell={'textAlign': 'center', 'font-family': 'Times New Roman',
                                                         'color': '#000000'},
