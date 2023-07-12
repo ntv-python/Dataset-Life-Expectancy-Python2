@@ -384,9 +384,9 @@ app.layout = dbc.Container(
                                                         options=[{'label': continent, 'value': continent} for
                                                                  continent in continents],
                                                         value=[initial_continent],
-                                                        className='checklist-vertical'
+                                                    
                                                     ),
-                                                    md=2
+                                                    md=4
                                                 ),
                                                 dbc.Col(
                                                     dcc.Dropdown(
