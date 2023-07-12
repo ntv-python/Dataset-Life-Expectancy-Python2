@@ -386,7 +386,7 @@ app.layout = dbc.Container(
                                                         value=[initial_continent],
                                                         className='checklist-vertical'
                                                     ),
-                                                    md=4
+                                                    md=2
                                                 ),
                                                 dbc.Col(
                                                     dcc.Dropdown(
