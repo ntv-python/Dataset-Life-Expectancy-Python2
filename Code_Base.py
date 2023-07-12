@@ -386,7 +386,7 @@ app.layout = dbc.Container(
                                                         value=[initial_continent],
                                                     
                                                     ),
-                                                    md=1
+                                                    md=2
                                                 ),
                                                 dbc.Col(
                                                     dcc.Dropdown(
